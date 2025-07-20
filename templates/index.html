@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fabric Pattern Classifier</title>
+    <style>
+        body {
+            background-color: #e6f2ff; /* Light sky-blue background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        input[type="file"], input[type="submit"] {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Upload Fabric Image</h1>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="image" required><br><br>
+            <input type="submit" value="Classify">
+        </form>
+    </div>
+</body>
+</html>
